@@ -49,9 +49,11 @@ namespace RNGBot
                 dyingclient.deadClient(RNGLuaServer.RNGEmulators);
 
             }
+
+            RNGLogger.shuttingdown = true;
             RNGLogger.setLogControl(null);
             RNGLogger.setStatusControl(null);
-            RNGLogger.shuttingdown = true;
+
             
             RNGLuaServer.shutdown();
             RNGLuaServer.serverSocket.Stop();
