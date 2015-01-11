@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net.Sockets;
+
+namespace RNGBot
+{
+    public class Emulator
+    {
+        public string ROM;
+        public int PID;
+        public TcpClient EmuClient;
+        public bias EmuBias;
+    }
+}
